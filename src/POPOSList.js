@@ -1,5 +1,5 @@
 // src/POPOSList.js
-
+import data from './sfpopos-data.json'
 import './POPOSList.css';
 import POPOSSpace from './POPOSSpace';
 import React from 'react';
@@ -43,3 +43,21 @@ function POPOSList() {
 }
 
 export default POPOSList
+
+const titles = data.map((obj) => {
+  return obj.title
+})
+
+console.log(titles)
+// deconstruct hours here
+const spaces = data.map(({ title, address, images, hours }) => {
+
+  return (
+    <POPOSSpace
+      name={title}
+      address={address}
+      image={images[0]}
+      hours={hours} // add a new prop for hours here
+    />
+  )
+})
