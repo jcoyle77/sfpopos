@@ -7,7 +7,7 @@ import React from 'react';
 
 function POPOSList() {
   return (
-    <div className="50 California Street">
+    <div className="POPOSList">
       <POPOSSpace
         name="50 California Street"
         address="50 California St."
