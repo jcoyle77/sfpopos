@@ -1,10 +1,12 @@
 // src/App.js
 
+import POPOSList from './POPOSList';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Title from './Title.js';
-import POPOSList from './POPOSList.js';
+
+
 
 function App() {
   return (
